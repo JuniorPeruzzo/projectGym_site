@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <script src="../scripts/calorias-script.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="/">Gym</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="/pages/index.html">Início</a></li>
+        <li><a href="/pages/calculadora_calorias.html">Calorias Diárias</a></li>
+        <li><a href="/pages/calculadora_imc.html">Calculadora IMC</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <script src="../scripts/mobile-navbar.js"></script>
+    <section>
+      <form>
+        <div>
+          <input type="number" name="genero" id="genero" class="generoInput" require placeholder="Informe seu gênero">
+        </div>
+        <div>
+          <input type="number" name="idade" id="idade" class="idadeInput" require placeholder="Informe sua idade">
+        </div>
+        <div>
+          <input type="number" name="altura" id="altura" class="alturaInput" require placeholder="Informe sua altura">
+        </div>
+        <div>
+          <input type="number" name="peso" id="peso" class="pesoInput" require placeholder="Informe seu peso">
+        </div>
+        <div>
+          <button type="submit" onclick="obterAlturaEPeso(event)">Calcular Calorias</button>
+        </div>
+        <div>
+          <h3 class="h3-resultado" id="resultado"></h3>
+        </div>
+      </form>
+
+    </section>
+  </main>
+
+</body>
+
+</html>
