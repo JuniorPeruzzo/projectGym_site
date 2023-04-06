@@ -13,7 +13,7 @@
 <body>
   <header>
     <nav>
-      <a class="logo" href="/">Gym</a>
+      <a class="logo" href="/pages/index.html">Gym</a>
       <div class="mobile-menu">
         <div class="line1"></div>
         <div class="line2"></div>
@@ -31,7 +31,19 @@
     <section>
       <form>
         <div>
-          <input type="number" name="genero" id="genero" class="generoInput" require placeholder="Informe seu gênero">
+          <select id="objetivo" name="objetivo">
+            <option class="objetivo" value="objetivo">Informe seu objetivo</option>
+            <option value="manter">Manter</option>
+            <option value="engordar">Engordar</option>
+            <option value="emagrecer">Emagrecer</option>
+          </select>
+        </div>
+        <div>
+          <select id="genero" name="genero">
+            <option class="selecione" value="selecione">Selecione seu gênero</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+          </select>
         </div>
         <div>
           <input type="number" name="idade" id="idade" class="idadeInput" require placeholder="Informe sua idade">
@@ -41,6 +53,19 @@
         </div>
         <div>
           <input type="number" name="peso" id="peso" class="pesoInput" require placeholder="Informe seu peso">
+        </div>
+        <div>
+          <select id="genero" name="genero">
+            <option class="selecione" value="selecione">Exercício físico semanal</option>
+            <option value="masculino">Sendetário</option>
+            <option value="feminino">1 hora</option>
+            <option value="feminino">2 horas</option>
+            <option value="feminino">3 horas</option>
+            <option value="feminino">5 hora</option>
+            <option value="feminino">7 horas</option>
+            <option value="feminino">Mais de 7 horas</option>
+
+          </select>
         </div>
         <div>
           <button type="submit" onclick="obterAlturaEPeso(event)">Calcular Calorias</button>

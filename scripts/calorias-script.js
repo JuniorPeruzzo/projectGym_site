@@ -5,4 +5,5 @@ var idade = document.getElementById("idade").value;
 var altura = document.getElementById("altura").value;
 var peso = document.getElementById("peso").value;
 
+
 }
