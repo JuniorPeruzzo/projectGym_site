@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora IMC</title>
+  <title>Dicas de Alimentação</title>
   <link rel="stylesheet" href="../styles/style.css">
   <script src="../scripts/imc-script.js"></script>
 </head>
@@ -31,14 +31,26 @@
     <section>
       <form>
         <div>
-          <input type="number" name="altura" id="altura" class="alturaInput" require placeholder="Informe sua altura">
+          <select id="objetivo" name="objetivo">
+            <option class="objetivo" value="objetivo">Nos informe seu objetivo</option>
+            <option value="manter">Manter</option>
+            <option value="emagrecer">Emagrecer</option>
+            <option value="engordar">Engordar</option>
+          </select>
         </div>
         <div>
-          <input type="number" name="peso" id="peso" class="pesoInput" require placeholder="Informe seu peso">
+          <input type="text" name="alimentos" id="alimentos" class="alimentosInput" require placeholder="Nos conte alguns alimentos que voce gosta">
         </div>
         <div>
-          <button type="submit" onclick="calculaIMC(event)">Calcular IMC</button>
+          <input type="number" name="calorias" id="calorias" class="caloriasInput" require placeholder="Informe as calorias que deseja atingir">
         </div>
+        <div>
+          <button type="submit" onclick="obterAlturaEPeso(event)">Receber Dicas</button>
+        </div>
+        <div>
+          <a class="a-calorias" href="/pages/calculadora_calorias.html">Calcular minhas calorias</a>
+        </div>
+
         <div>
           <h3 class="h3-resultado" id="resultado"></h3>
         </div>
@@ -47,7 +59,6 @@
     </section>
   </main>
   <script src="../scripts/mobile-navbar.js"></script>
-
 </body>
 
 </html>

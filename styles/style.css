@@ -127,7 +127,7 @@ form div {
   flex-direction: column;
   margin-bottom: 30px;
 }
-form select {
+form select  {
   outline: unset;
   padding: 20px;
   width: 340px;
@@ -155,7 +155,18 @@ form button {
   width: 300px;
   border: 1px solid #23232e;
   border-radius: 20px;
+  
 } 
+.a-calorias {
+  background-color: #23232e;
+  border: 1px solid #23232e;
+  cursor: pointer;
+  margin-left: 75px;
+  padding: 10px;
+  width: 175px;
+  border-radius: 20px;
+
+}
 
 .h3-resultado {
   font-family: Arial, Helvetica, sans-serif;
@@ -164,3 +175,4 @@ form button {
   width: 300px;
   color: white;
 }
+
