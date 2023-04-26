@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dicas de Alimentação</title>
   <link rel="stylesheet" href="../styles/style.css">
-  <script src="../scripts/imc-script.js"></script>
+  <script src="../scripts/dieta_script.js"></script>
 </head>
 
 <body>
@@ -42,10 +42,10 @@
           <input type="text" name="alimentos" id="alimentos" class="alimentosInput" require placeholder="Nos conte alguns alimentos que voce gosta">
         </div>
         <div>
-          <input type="number" name="calorias" id="calorias" class="caloriasInput" require placeholder="Informe as calorias que deseja atingir">
+          <input type="number" name="caloriasDia" id="caloriasDia" class="caloriasInput" require placeholder="Informe suas calorias diarias">
         </div>
         <div>
-          <button type="submit" onclick="obterAlturaEPeso(event)">Receber Dicas</button>
+          <button type="submit" id="button-pesquisa" onclick="ApiRequest(event)">Receber Dicas</button>
         </div>
         <div>
           <a class="a-calorias" href="/pages/calculadora_calorias.html">Calcular minhas calorias</a>
