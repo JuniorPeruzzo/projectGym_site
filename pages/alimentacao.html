@@ -23,7 +23,6 @@
         <li><a href="/pages/index.html">Início</a></li>
         <li><a href="/pages/calculadora_calorias.html">Calorias Diárias</a></li>
         <li><a href="/pages/alimentacao.html">Dicas de Alimentação</a></li>
-        <li><a href="/pages/calculadora_imc.html">Calculadora IMC</a></li>
       </ul>
     </nav>
   </header>
@@ -44,8 +43,8 @@
         <div>
           <input type="number" name="caloriasDia" id="caloriasDia" class="caloriasInput" require placeholder="Informe suas calorias diarias">
         </div>
-        <div>
-          <button type="submit" id="button-pesquisa" onclick="ApiRequest(event)">Receber Dicas</button>
+        <div id="button-pesquisa">
+          <button type="submit" onclick="ApiRequest(event)">Receber Dicas</button>
         </div>
         <div>
           <a class="a-calorias" href="/pages/calculadora_calorias.html">Calcular minhas calorias</a>
@@ -58,7 +57,7 @@
 
     </section>
   </main>
-  <script src="../scripts/mobile-navbar.js"></script>
+  <script src="../scripts/mobile_navbar.js"></script>
 </body>
 
 </html>
