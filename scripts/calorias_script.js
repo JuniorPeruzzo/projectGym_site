@@ -1,10 +1,10 @@
 function calculaCalorias(event) {
 	event.preventDefault();
-	var genero = document.getElementById("genero").value;
-	var idade = document.getElementById("idade").value;
-	var altura = document.getElementById("altura").value;
-	var peso = document.getElementById("peso").value;
-	var atividade = document.getElementById("atividade").value;
+	let genero = document.getElementById("genero").value;
+	let idade = document.getElementById("idade").value;
+	let altura = document.getElementById("altura").value;
+	let peso = document.getElementById("peso").value;
+	let atividade = document.getElementById("atividade").value;
 
 	let tmb = 0;
 
@@ -31,9 +31,5 @@ function calculaCalorias(event) {
 	console.log(resultado);
 
 	document.getElementById("resultado").innerHTML =
-		"Seu consumo aproximado de calorias diárias é de " +
-		resultado.toFixed(2);
+		"Seu consumo aproximado de calorias diárias é de " + resultado.toFixed(2);
 }
-
-/* O resultado obtido após multiplicar a TMB pelo fator de atividade é uma estimativa aproximada das calorias diárias que o seu corpo consome para manter as funções vitais em repouso e o seu nível de atividade física. Essa estimativa pode ser usada como base para planejar a sua ingestão de calorias diárias com base nos seus objetivos de saúde, como manutenção de peso, perda de peso ou ganho de peso.
-Lembrando que essa é uma estimativa e que o gasto calórico pode variar de pessoa para pessoa. É sempre recomendado consultar um profissional de saúde, como um nutricionista ou médico, para obter uma avaliação mais precisa e personalizada das suas necessidades calóricas com base na sua saúde, estilo de vida e objetivos específicos. */

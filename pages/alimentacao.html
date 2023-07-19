@@ -2,62 +2,62 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dicas de Alimentação</title>
-  <link rel="stylesheet" href="../styles/style.css">
-  <script src="../scripts/dieta_script.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dicas de Alimentação</title>
+	<link rel="stylesheet" href="../styles/style.css">
+	<script src="../scripts/dieta_script.js"></script>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a class="logo" href="/pages/index.html">Gym</a>
-      <div class="mobile-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-      <ul class="nav-list">
-        <li><a href="/pages/index.html">Início</a></li>
-        <li><a href="/pages/calculadora_calorias.html">Calorias Diárias</a></li>
-        <li><a href="/pages/alimentacao.html">Dicas de Alimentação</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <form>
-        <div>
-          <select id="objetivo" name="objetivo">
-            <option class="objetivo" value="objetivo">Nos informe seu objetivo</option>
-            <option value="manter">Manter</option>
-            <option value="emagrecer">Emagrecer</option>
-            <option value="engordar">Engordar</option>
-          </select>
-        </div>
-        <div>
-          <input type="text" name="alimentos" id="alimentos" class="alimentosInput" require placeholder="Nos conte alguns alimentos que voce gosta">
-        </div>
-        <div>
-          <input type="number" name="caloriasDia" id="caloriasDia" class="caloriasInput" require placeholder="Informe suas calorias diarias">
-        </div>
-        <div id="button-pesquisa">
-          <button type="submit" onclick="ApiRequest(event)">Receber Dicas</button>
-        </div>
-        <div>
-          <a class="a-calorias" href="/pages/calculadora_calorias.html">Calcular minhas calorias</a>
-        </div>
+	<header>
+		<nav>
+			<a class="logo" href="/pages/index.html">Gym</a>
+			<div class="mobile-menu">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+			<ul class="nav-list">
+				<li><a href="/pages/index.html">Início</a></li>
+				<li><a href="/pages/calculadora_calorias.html">Calorias Diárias</a></li>
+				<li><a href="/pages/alimentacao.html">Dicas de Alimentação</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<form>
+				<div>
+					<select id="objetivo" name="objetivo">
+						<option class="objetivo" value="objetivo">Nos informe seu objetivo</option>
+						<option value="manter">Manter</option>
+						<option value="emagrecer">Emagrecer</option>
+						<option value="engordar">Engordar</option>
+					</select>
+				</div>
+				<div>
+					<input type="text" name="alimentos" id="alimentos" class="alimentosInput" require placeholder="Nos conte alguns alimentos que voce gosta">
+				</div>
+				<div>
+					<input type="number" name="caloriasDia" id="caloriasDia" class="caloriasInput" require placeholder="Informe suas calorias diarias">
+				</div>
+				<div id="button-pesquisa">
+					<button type="submit" onclick="ApiRequest(event)">Receber Dicas</button>
+				</div>
+				<div>
+					<a class="a-calorias" href="/pages/calculadora_calorias.html">Calcular minhas calorias</a>
+				</div>
 
-        <div>
-          <h3 class="h3-resultado" id="resultado"></h3>
-        </div>
-      </form>
+				<div>
+					<h3 class="h3-resultado" id="resultado"></h3>
+				</div>
+			</form>
 
-    </section>
-  </main>
-  <script src="../scripts/mobile_navbar.js"></script>
+		</section>
+	</main>
+	<script src="../scripts/mobile_navbar.js"></script>
 </body>
 
 </html>
